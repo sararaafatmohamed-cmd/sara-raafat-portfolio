@@ -450,15 +450,69 @@ section {
     text-align: left;
 }
 
-.projects .card > i {
-    display: block;
-    text-align: center;
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    margin-bottom: 2rem;
+
+    border: 1px solid rgba(232, 213, 196, 0.25);
 }
 
 .project-tools {
     margin-top: 1.5rem;
+
     font-weight: 600;
+
     color: #B08968 !important;
+}
+
+.project-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin-top: 2rem;
+
+    padding: 0.9rem 1.5rem;
+
+    border: 1px solid #B08968;
+
+    border-radius: 10px;
+
+    color: #F7EFE7;
+
+    font-size: 1.3rem;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.project-link:hover {
+    background: #B08968;
+
+    color: #2B1B17;
+
+    transform: translateY(-2px);
+}
+
+.project-link i {
+    font-size: 1.1rem;
+
+    margin-left: 0.7rem;
 }
 
 
