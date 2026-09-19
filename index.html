@@ -25,7 +25,7 @@
 
         <nav>
 
-            <a href="#home" class="active" data-tooltip="Home">
+            <a href="#home" data-tooltip="Home">
                 <i class="fa-solid fa-house"></i>
             </a>
 
@@ -774,13 +774,49 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer>
+        <footer>
 
         <p>
             © 2026 Sara Raafat. All Rights Reserved.
         </p>
 
     </footer>
+
+
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
+
+        window.addEventListener("scroll", () => {
+
+            let current = "";
+
+            sections.forEach(section => {
+
+                const sectionTop = section.offsetTop - 200;
+                const sectionHeight = section.offsetHeight;
+
+                if (window.scrollY >= sectionTop &&
+                    window.scrollY < sectionTop + sectionHeight) {
+
+                    current = section.getAttribute("id");
+
+                }
+
+            });
+
+            navLinks.forEach(link => {
+
+                link.classList.remove("active");
+
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+
+            });
+
+        });
+    </script>
 
 </body>
 
