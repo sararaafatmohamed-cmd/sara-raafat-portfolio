@@ -1,1 +1,309 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="my.css">
+    <title>All Projects | Sara Raafat</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Sara</a>
+
+        <nav>
+            <a href="index.html" data-tooltip="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="index.html#about" data-tooltip="About">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="index.html#education" data-tooltip="Education">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="index.html#skills" data-tooltip="Skills">
+                <i class="fa-solid fa-chart-column"></i>
+            </a>
+            <a href="top5.html" data-tooltip="Top 5 Projects">
+                <i class="fa-solid fa-star"></i>
+            </a>
+            <a href="projects.html" class="active" data-tooltip="All Projects">
+                <i class="fa-solid fa-folder-open"></i>
+            </a>
+            <a href="index.html#services" data-tooltip="Services">
+                <i class="fa-solid fa-laptop-code"></i>
+            </a>
+            <a href="index.html#contact" data-tooltip="Contact">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="projects-page">
+
+        <div class="page-heading">
+            <p class="welcome">Portfolio</p>
+            <h1>All <span>Projects</span></h1>
+            <p>
+                Explore my projects across data analysis, SQL, Power BI,
+                and data preparation.
+            </p>
+        </div>
+
+        <div class="project-controls">
+            <div class="project-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="projectSearch"
+                       placeholder="Search projects...">
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="powerbi">Power BI</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="excel">Excel</button>
+                <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+            </div>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+            <!-- 1 -->
+            <article class="project-card" data-category="powerbi sql analysis">
+                <img src="images/vehicle-insurance.png" alt="Vehicle Insurance Analysis" class="project-image">
+                <div class="project-card-content">
+                    <h2>Vehicle Insurance Analysis</h2>
+                    <p>An end-to-end project covering data preparation, SQL Server database design, and an interactive insurance dashboard.</p>
+                    <p class="project-tools">Power Query · SQL Server · Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Vehicle-Insurance-Analysis" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/country-development.png" alt="Country Development Analysis" class="project-image">
+                <div class="project-card-content">
+                    <h2>Country Development & Economic Analysis</h2>
+                    <p>Exploring economic, population, health, and education indicators using interactive Power BI report pages.</p>
+                    <p class="project-tools">Power BI · Power Query · DAX</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Country-Development-Economic-Analysis" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="project-card" data-category="analysis">
+                <img src="images/netflix.png" alt="Netflix Analysis" class="project-image">
+                <div class="project-card-content">
+                    <h2>Netflix Analysis</h2>
+                    <p>Exploring Netflix titles, content attributes, and data quality.</p>
+                    <p class="project-tools">Data Analysis</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Netflix_Analysis" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/superstore-sales.png" alt="Superstore Sales Analysis" class="project-image">
+                <div class="project-card-content">
+                    <h2>Superstore Sales Analysis — Power BI</h2>
+                    <p>An interactive dashboard project focused on sales and profit performance.</p>
+                    <p class="project-tools">Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Superstore%20Sales%20Analysis%20%E2%80%94%20Power%20BI" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/energyshift.png" alt="EnergyShift Graduation Project" class="project-image">
+                <div class="project-card-content">
+                    <h2>EnergyShift — Graduation Project</h2>
+                    <p>Exploring global energy transition, energy security, critical minerals, and electricity demand. Currently in progress.</p>
+                    <p class="project-tools">Power BI · Data Analysis</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed/EnergyShift" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/uber-analytics.png" alt="Uber Analytics" class="project-image">
+                <div class="project-card-content">
+                    <h2>Uber Analytics</h2>
+                    <p>A Power BI analytics project exploring data through interactive visual reports.</p>
+                    <p class="project-tools">Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Uber-Analytics-PowerBI" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/samsung-dashboard.png" alt="Samsung Power BI Dashboard" class="project-image">
+                <div class="project-card-content">
+                    <h2>Samsung Power BI Dashboard</h2>
+                    <p>A dashboard project built to present and explore data through Power BI visualizations.</p>
+                    <p class="project-tools">Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Samsung-PowerBI-Dashboard" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 8 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/project-management.png" alt="Project Management Dashboard" class="project-image">
+                <div class="project-card-content">
+                    <h2>Project Management Dashboard</h2>
+                    <p>A Power BI dashboard project for presenting project-related data and performance information.</p>
+                    <p class="project-tools">Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Project-Management-Dashboard" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 9 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/healthcare.png" alt="Healthcare Analytics" class="project-image">
+                <div class="project-card-content">
+                    <h2>Healthcare Analytics</h2>
+                    <p>A data analytics project presenting healthcare data through Power BI reporting.</p>
+                    <p class="project-tools">Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Healthcare-Analytics-PowerBI" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 10 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/hr-analytics.png" alt="HR Analytics" class="project-image">
+                <div class="project-card-content">
+                    <h2>HR Analytics</h2>
+                    <p>A Power BI project focused on exploring and presenting HR-related data.</p>
+                    <p class="project-tools">Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/HR-Analytics-PowerBI" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 11 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/goodreads.png" alt="Goodreads Books Analysis" class="project-image">
+                <div class="project-card-content">
+                    <h2>Goodreads Books Analysis</h2>
+                    <p>Exploring a books dataset, including book information and reader ratings.</p>
+                    <p class="project-tools">Data Analysis</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Goodreads-Books-Analysis" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 12 -->
+            <article class="project-card" data-category="powerbi excel analysis">
+                <img src="images/superstore.png" alt="Superstore 2019" class="project-image">
+                <div class="project-card-content">
+                    <h2>Superstore 2019</h2>
+                    <p>Data analysis project involving data modeling and sales and profit reporting.</p>
+                    <p class="project-tools">Excel · Power Query · Power Pivot</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Superstore-2019" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 13 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/Cars.png" alt="Cars Customers and Sellers" class="project-image">
+                <div class="project-card-content">
+                    <h2>Cars, Customers & Sellers</h2>
+                    <p>A data cleaning project involving multiple tables, preparing and structuring data for analysis.</p>
+                    <p class="project-tools">Power Query · Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/blob/main/Power-BI-Power-Query/Power-BI-Power-Query/T2_S2_Car_Sales.pbix" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 14 -->
+            <article class="project-card" data-category="sql powerbi analysis">
+                <img src="images/Pizza_Dashboard_1.png" alt="Pizza Sales Analysis" class="project-image">
+                <div class="project-card-content">
+                    <h2>Pizza Sales Analysis — SQL & Power BI</h2>
+                    <p>An end-to-end project analyzing sales performance, product trends, and business insights.</p>
+                    <p class="project-tools">SQL Server · Power BI</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Pizza-Sales-SQL-PowerBI" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 15 -->
+            <article class="project-card" data-category="sql">
+                <img src="images/SQL.png" alt="Electronics Shop Database" class="project-image">
+                <div class="project-card-content">
+                    <h2>Electronics Shop Database</h2>
+                    <p>A relational database project covering table relationships, primary and foreign keys, and SQL queries.</p>
+                    <p class="project-tools">SQL Server</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/SQL-Training-IT-Gate/blob/main/Electronics-Shop-Database/ShopDB.sql" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+            <!-- 16 -->
+            <article class="project-card" data-category="powerbi analysis">
+                <img src="images/Books_Dashboard_2.png" alt="Books Sales and Ratings" class="project-image">
+                <div class="project-card-content">
+                    <h2>Books Sales & Ratings</h2>
+                    <p>A Power BI project exploring book sales, ratings, authors, genres, languages, and publishing trends.</p>
+                    <p class="project-tools">Power BI · Power Query</p>
+                    <a class="project-link" href="https://github.com/sararaafatmohamed-cmd/DEPI-Data-Analysis-Projects/tree/main/Books-Sales-PowerBI" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noProjects" class="no-projects" hidden>
+            No projects found. Try another search or filter.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Sara Raafat. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById("projectSearch");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+        const noProjects = document.getElementById("noProjects");
+
+        let activeFilter = "all";
+
+        function filterProjects() {
+            const searchValue = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            projectCards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                const categories = card.dataset.category.split(" ");
+
+                const matchesSearch = text.includes(searchValue);
+                const matchesFilter =
+                    activeFilter === "all" || categories.includes(activeFilter);
+
+                if (matchesSearch && matchesFilter) {
+                    card.style.display = "";
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            noProjects.hidden = visibleCount !== 0;
+        }
+
+        searchInput.addEventListener("input", filterProjects);
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                activeFilter = button.dataset.filter;
+                filterProjects();
+            });
+        });
+    </script>
+
+</body>
+</html>
